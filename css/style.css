@@ -33,6 +33,9 @@
         url('../fonts/open-sans-v28-latin_cyrillic-600.woff') format('woff');
     /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+:root {
+    --font-size-text: 15px;
+}
 
 /* Паддинги не влияют на внешние размеры элементов */
 * {
@@ -102,7 +105,7 @@ li.section-do-item:hover {
 }
 
 li.nav-item {
-    font-size: 15px;
+    font-size: var(--font-size-text);
     line-height: 1;
     font-weight: 600;
 }

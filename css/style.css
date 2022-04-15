@@ -1,0 +1,485 @@
+/* open-sans-regular - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+        url('../fonts/open-sans-v28-latin_cyrillic-regular.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/open-sans-v28-latin_cyrillic-regular.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+        url('../fonts/open-sans-v28-latin_cyrillic-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/open-sans-v28-latin_cyrillic-300.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* open-sans-600 - latin_cyrillic */
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+        url('../fonts/open-sans-v28-latin_cyrillic-600.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('../fonts/open-sans-v28-latin_cyrillic-600.woff') format('woff');
+    /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* Паддинги не влияют на внешние размеры элементов */
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+
+li.section-do-item {
+    flex: 1 1 25%;
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 30px;
+    transition-property: background-color, color;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+}
+
+li.section-do-item:hover {
+    cursor: pointer;
+    background-color: #3172b9;
+    color:white;
+}
+
+/* Header */
+.header-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    margin: auto;
+}
+
+li.nav-item {
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 600;
+}
+
+a.nav-link {
+    color: #1c1c1c;
+    transition: color .5s ease;
+}
+
+a.nav-link:hover {
+    color: #3172b9;
+}
+
+a.nav-link.is-activ {
+    color: #3172b9;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.header {
+    height: 110px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.header-btn {
+    margin-left: 40px;
+}
+
+.btn {
+    background-color: #3172b9;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1;
+    padding: 13px 30px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-block;
+    /* transition: background-color .5s ease; */
+    transition: border-radius, .5s ease;
+}
+
+.btn:hover {
+    /* background-color: #4194B9; */
+    border-radius: 25px;
+}
+
+.btn:active {
+    background-color: red;
+}
+
+/* a.btn-big {
+    padding: 20px 45px;
+} */
+
+/* Sale alert */
+
+.sale-alert {
+    outline: 3px solid red;
+    padding: 25px;
+}
+
+.sale-alert__heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+/* Hero */
+.section-hero__sale {
+    margin: 50px 0;
+}
+.section-hero {
+    background: url(/img/Base.jpg) right center no-repeat white;
+    background-size: contain;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.section-hero__container {
+    padding-top: 125px;
+    padding-bottom: 130px;
+}
+
+.section-hero__content {
+    max-width: 50%;
+}
+
+.section-hero__heading {
+    margin-bottom: 30px;
+    font-size: 40px;
+    line-height: 52px;
+    font-weight: 300;
+    color: #1c1c1c;
+}
+
+.section-hero__description {
+    margin-bottom: 60px;
+    font-size: 18px;
+    line-height: 25px;
+    color: #787878;
+}
+
+.section-hero__description_alert {    
+    color: red;
+}
+
+.section-hero__action {
+    display: inline-block;
+}
+
+.section-hero__btn {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.section-hero__btn-description {
+    margin-top: 10px;
+    font-size: 11px;
+    line-height: 1;
+    color: #787878;
+    text-transform: uppercase;
+    /* text-align: center; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-hero__ssl-icon {
+    display: inline-block;
+    width: 13px;
+    height: 17px;
+    background-size: contain;
+    background: url(/img/Shield-icon.png) center center no-repeat transparent;
+    margin-right: 13px;
+    transform: translateY(-2px);
+}
+
+/* What we do  */
+.section-do__sale {
+    margin: 25px 0;
+    background: #3172b9;
+}
+.section-heading {
+    font-size: 36px;
+    line-height: 1.3;
+    color: #1c1c1c;
+    font-weight: 300;
+    margin-top: 0;
+    margin-bottom: 25px;
+}
+
+section.section-do {
+    padding-top: 200px;
+    padding-bottom: 220px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+p.section-description {
+    margin-top: 0;
+    font-size: 16px;
+    line-height: 1.3;
+    color: #787878;
+}
+
+ul.section-do-list {
+    margin-top: 50px;
+    display: flex;
+}
+
+li.section-do-item:not(:last-child) {
+    margin-right: 30px;
+}
+
+li.section-do-item:hover  p.section-do-item-description {
+    color: white;
+}
+.section-do-item:hover .cls-1 {
+    fill: white;
+    fill-rule: evenodd;
+    transition: fill .5s ease;
+}
+
+p.section-do-item-description {
+    text-align: center;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #787878;
+    font-weight: 300;
+    transition: color .5s ease;
+}
+
+strong.section-do-item-heading {
+    font-size: 20px;
+    line-height: 21px;
+    /* color: #1c1c1c; */
+    font-weight: 600;
+    margin: 35px 0 25px 0;
+}
+
+/* Our Happy Clients */
+p.section-clients-testimonia {
+    margin-bottom: 40px;
+    margin-top: 0;
+    line-height: 25px;
+}
+
+div.section-clients-username {
+    font-size: 17px;
+    line-height: 1.3;
+    font-weight: 600;
+}
+
+h2.section-clients-heading {
+    margin-bottom: 55px;
+
+}
+
+section.section-clients {
+    padding-top: 90px;
+    padding-bottom: 160px;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+ul.section-clients-list {
+    display: flex;
+}
+
+li.section-clients-item:not(:last-child) {
+    margin-right: 35px;
+}
+
+li.section-clients-item {
+    border: 1px solid #e4e4e4;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* flex-shrink flex-grow flex-basis*/
+    flex: 1 1 33.33%;
+    padding: 60px 60px 30px 60px;
+    margin-top: 0;
+    font-size: 14px;
+    line-height: 21px;
+    color: #787878;
+    font-weight: 300;
+}
+
+div.section-clients-user {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #e4e4e4;
+    padding-top: 35px;
+}
+
+img.section-clients-avatar {
+    margin-right: 15px;
+}
+
+/* Contacts */
+section.section-contacts {
+    padding-top: 85px;
+    padding-bottom: 90px;
+}
+
+ul.section-contacts-list {
+    margin-top: 45px;
+    display: flex;
+}
+
+li.section-contacts-item {
+    flex: 1 1 33.33%;
+    /* outline: 1px solid #d2d2d2; */
+}
+
+div.section-contacts-info {
+    max-width: 250px;
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 300;
+    color: #787878;
+}
+
+span.section-contacts-icon {
+    /* Элемет занимает всю строку, после него перенос строки */
+    display: block;
+    margin-bottom: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: top left;
+    background-size: auto 100%;
+    background-color: transparent;
+}
+
+span.section-contacts-icon-gps {
+    background-image: url(/img/gps.png);
+}
+
+span.section-contacts-icon-phone {
+    background-image: url(/img/phone.png);
+}
+
+span.section-contacts-icon-mail {
+    background-image: url(/img/mail.png);
+}
+
+strong.section-contacts-heading {
+    display: block;
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 21px;
+    color: #1c1c1c;
+    font-weight: 600;
+}
+
+a.section-contact-link {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 25px;
+    color: #787878;
+}
+
+/* Footer */
+footer {
+    height: 125px;
+}
+
+div.footer-container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: space-between;
+}
+
+div.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+a.footer-logo {
+    margin-right: 22px;
+}
+
+ul.footer-nav-list {
+    display: flex;
+}
+
+li.footer-nav-item:not(:last-child) {
+    margin-right: 40px;
+}
+
+small.footer-copirights {
+    font-size: 12px;
+    line-height: 17px;
+    color: #787878;
+}
+
+a.footer-nav-link {
+    font-size: 14px;
+    color: #787878;
+}
+
+/* Form */
+form.form {
+    display: flex;
+    justify-content: space-between;
+}
+
+input.input {
+    border-radius: 50px;
+    border: 1px solid #dadada;
+    padding-left: 10px;
+}
+
+input::placeholder {
+    color: #dadada;
+}
